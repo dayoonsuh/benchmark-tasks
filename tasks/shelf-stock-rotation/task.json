@@ -1,0 +1,21 @@
+{
+  "title": "Restock a shelf lane first-in, first-out: older boxes to the front, new boxes behind",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "retail",
+    "shelf stocking",
+    "stock rotation",
+    "FIFO",
+    "sequencing"
+  ],
+  "instruction": "Restock this shelf lane first-in, first-out: move the two older boxes already on the shelf to the front of the lane, then put the two new boxes from the case behind them.",
+  "context": "Filling shelves is core work for the 2.87 million US stockers and order fillers (BLS, May 2023). Rotating stock so older items sit in front is standard for food and medicine, so they sell before they expire.",
+  "setup": "Three shelf lanes run front to back on the table, 5.5 cm wide, between 1 cm dividers, with 1.2 cm lips front and back; boxes stand 1 cm apart in four slots. The middle lane holds two older product boxes (4 x 3.5 x 5 cm, 50 g) in its two back slots; the outer lanes are full of other products. Two new identical boxes stand in snug cells of an open case (1 cm walls) in front of the right arm. Exact positions are in shelf_stock_rotation.py.",
+  "scoring": "The middle lane has four slots, front to back. A slot counts when exactly one box stands upright (tilt under 10 degrees) inside it, at rest, and it is the right stock: an older box in slots 1-2, a new box in slots 3-4 (date codes on the boxes tell them apart). Score = 0.2 per slot that counts, plus 0.2 if all four do.",
+  "run_limit": "3,600 steps (3 minutes at 20 Hz)",
+  "reset_notes": "Nothing is consumed. Put the two older boxes back in slots 3-4 and the two new boxes back in the case.",
+  "fidelity": "Product boxes, shelf and case are rigid, as cardboard product boxes and metal shelving nearly are. Older and new boxes look identical in simulation (in reality they differ only by a printed date code); they are told apart by where they start. Labels, price tags and facing labels forward are not modelled. Station default friction and contacts.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-L67UGM"
+}
