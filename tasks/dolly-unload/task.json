@@ -1,0 +1,21 @@
+{
+  "title": "Brace a dolly with one hand and push a wide case off it onto a marked spot with the other",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "bracing",
+    "non-prehensile pushing",
+    "material handling",
+    "dolly",
+    "unloading"
+  ],
+  "instruction": "Hold the dolly still with one hand and push the heavy case off it onto the marked spot with the other.",
+  "context": "Moving freight by hand and with dollies and hand trucks is core work for the 3.0 million US hand laborers and material movers (BLS, May 2023). A case too wide to grip is slid off a dolly, and the dolly drags along unless the other hand braces it. Unlike bimanual lift or handover tasks, one hand must hold a movable base still while the other pushes against it.",
+  "setup": "A dark blue dolly deck (20 x 14 cm, 4 mm thick, 300 g) lies loose on the table centred at (25, 10) cm (x forward from the arm bases, y to the left). On it sits a brown carton (10 x 10 x 3 cm, 600 g), centred on the deck, wider than either gripper opens. The drop zone is the table patch right of the dolly, x 19 to 31 cm, y -9.5 to 2.5 cm, its far corners marked yellow.",
+  "scoring": "Scored at the end of the run. 1.0 if the case is fully off the dolly (no part over the deck), upright (tilt under 10 degrees), standing on the table with its centre inside the drop zone; 0.5 if off and upright but outside the zone; 0 if any part is still on the deck. Halved if the dolly ever moved more than 2 cm from its start; 0 if the case was knocked over at any time.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Nothing is consumed. Put the dolly back on its marks and the case back on the middle of the deck.",
+  "fidelity": "The dolly is a thin rigid deck that slides on the table; a real dolly rolls on casters and stands higher, so it drags away even more readily. The carton is a rigid box with no contents. Pushing up onto a deck is not modelled (a pushed box tips over even a 2 mm step without a ramp), so the task unloads. Station default friction and contacts.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-EHEHVA"
+}
