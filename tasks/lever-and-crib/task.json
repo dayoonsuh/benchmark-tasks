@@ -1,0 +1,21 @@
+{
+  "title": "Raise a heavy machine's edge with a pry bar and crib it up on a block",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "tool use",
+    "lever",
+    "cribbing",
+    "load transfer",
+    "maintenance"
+  ],
+  "instruction": "Press down on the pry bar to raise the machine's edge, push the wooden block under it, then release the bar so the machine rests on the block.",
+  "context": "Raising equipment with a pry bar and blocking it up is routine for the 1.5 million US general maintenance and repair workers (BLS, May 2023), e.g. to slide skates or shims under a machine. The block only fits while the edge is held up, so one hand must keep the lever loaded while the other places the block, and the load must end on the block, not the bar.",
+  "setup": "A grey machine housing (10 x 16 x 6 cm, 2 kg) stands on a fixed 4 cm steel plinth that it overhangs by 3 cm on its left. A 12 cm steel pry bar lies across a fixed 2.7 cm fulcrum, its tip under the overhang and its free end 8 cm past the fulcrum (2:1). A wooden block (5 x 2.5 x 4.8 cm, 100 g), taller than the 4 cm gap, stands 4 cm behind the machine. Exact positions are in lever_and_crib.py.",
+  "scoring": "Scored at the end of the run. 1.0 if the block stands upright on the table under the overhang and the machine's left edge rests on it (edge within 2 mm of the block top, at least 5 mm above the plinth), with the bar released. 0.3 if the edge was raised at least 8 mm at some point but is not resting on the block at the end. 0 if the machine was shoved more than 1.5 cm or tipped over.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Nothing is consumed. Lower the machine onto the plinth, lay the bar back across the fulcrum with its tip under the overhang, and stand the block behind the machine.",
+  "fidelity": "All parts are rigid boxes; the bar is set across its fulcrum at the start (placing it is not part of the task). Real machines are far heavier and are raised with longer bars; masses and sizes are scaled to the arms. The edge lifts about 11 mm, leaving a few mm over the block. Station default friction and contacts.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-5D3BJA"
+}
